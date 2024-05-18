@@ -1,0 +1,38 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Estilos para el título */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para cada elemento de la lista */
+  .prestamo-item {
+    display: inline-block; /* Mostrar elementos en línea */
+    vertical-align: top; /* Alinear elementos en la parte superior */
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-right: 15px; /* Agregar espacio entre elementos */
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para los detalles del préstamo */
+  .prestamo-details {
+    font-weight: bold;
+  }
+  
+  /* Estilos para los datos del préstamo */
+  .prestamo-data {
+    margin-left: 10px;
+  }
+  

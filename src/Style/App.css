@@ -1,0 +1,29 @@
+ nav {
+    background-color: #333; /* Color de fondo del navbar */
+    padding: 10px 0; /* Espaciado interno del navbar */
+  }
+  
+  ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+  }
+  
+  /* Estilos para los enlaces */
+  a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; /* Color del texto de los enlaces */
+    padding: 10px 15px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+  }
+  
+  a:hover {
+    background-color: #555; /* Color de fondo cuando se pasa el ratón por encima */
+  }
+  

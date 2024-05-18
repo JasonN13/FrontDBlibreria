@@ -1,0 +1,39 @@
+.form-libros-perdidos {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px; /* Espaciado interno del formulario */
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .form-libros-perdidos h1 {
+    font-size: 24px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+  
+  .form-libros-perdidos input[type='text'],
+  .form-libros-perdidos input[type='date'],
+  .form-libros-perdidos button {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 10px; /* Espacio inferior entre elementos */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .form-libros-perdidos button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    left: 1rem;
+  }
+  
+  .form-libros-perdidos button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+  }
+  .form-libros-perdidos label {
+    display: block; /* Muestra las etiquetas como bloques */
+    margin-bottom: 5px; /* Espacio inferior de las etiquetas */
+    font-weight: bold; /* Negrita en las etiquetas */
+}

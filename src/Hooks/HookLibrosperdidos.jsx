@@ -4,7 +4,9 @@ import axios from 'axios';
 export const HookLibrosperdidos = () => {
     const [dataform, setdataform] = useState(
         {
-        fecha_notificacion: Date
+        libro_id : "",
+        fecha_notificacion: Date,
+        usuario_id : ""
         });
     
       const [resultado, setresultado] = useState("");

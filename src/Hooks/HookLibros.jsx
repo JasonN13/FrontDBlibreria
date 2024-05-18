@@ -27,7 +27,7 @@ export const HookLibros = () => {
         const result = await axios.post(url, dataform);
         const dataresult = result.data;
     
-        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_insertado.id);
+        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_insertado[0].id);
       }
 
       return { dataform, resultado, registro, submit }; 

@@ -25,7 +25,7 @@ export const HookUsuarios = () => {
         const result = await axios.post(url, dataform);
         const dataresult = result.data;
     
-        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado.id);
+        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado[0].id);
       }
 
       return { dataform, resultado, registro, submit }; 
