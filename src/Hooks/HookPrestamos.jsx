@@ -4,8 +4,8 @@ import axios from 'axios';
 export const HookPrestamos = () => {
     const [dataform, setdataform] = useState(
         {
-            fecha_prestamo : Date  ,
-            fecha_devolucion : Date 
+            fecha_prestamo : new Date()  ,
+            fecha_devolucion : new Date 
         });
     
       const [resultado, setresultado] = useState("");
@@ -23,7 +23,7 @@ export const HookPrestamos = () => {
         const result = await axios.post(url, dataform);
         const dataresult = result.data;
     
-        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado[0].id);
+        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado.prestamo_id);
       }
 
       return { dataform, resultado, registro, submit }; 
