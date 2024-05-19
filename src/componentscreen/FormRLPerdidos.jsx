@@ -1,5 +1,6 @@
 import React from "react";
 import { HookLibrosPerdidos } from "../Hooks/HookRLPerdidos";
+import '..//Style//RLP.css'
 
 export const FormLibrosPerdidos = () => {
     // Obtener los libros perdidos usando el hook

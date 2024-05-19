@@ -5,7 +5,8 @@ import { FormPrestamos } from "./componentscreen/FormPrestamos"
 import { FormUsuarios } from "./componentscreen/FormUsuarios"
 import { FormRPrestamos } from "./componentscreen/FormRPrestamos"
 import { FormLibrosPerdidos } from "./componentscreen/FormRLPerdidos"
-import './Style/App.css'
+import { FormRUsuarios } from "./componentscreen/FormRUsuarios"
+import './Style//App.css'
 
 
 export const App = () => {
@@ -34,6 +35,9 @@ export const App = () => {
             <li>
               <Link to="/Consulta Libros Perdidos">Consulta LB Perdidos</Link>
             </li>
+            <li>
+              <Link to="/Registro de usuarios">Consulta de Usuarios</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -42,7 +46,8 @@ export const App = () => {
            <Route path='/RegistroPrestamos' element={<FormPrestamos/>}/> 
            <Route path='/RegistroUsuarios' element={<FormUsuarios/>}/>   
            <Route path='/Consulta Prestamos' element={<FormRPrestamos/>}/>
-           <Route path='/Consulta Libros Perdidos' element={<FormLibrosPerdidos/>}/>        
+           <Route path='/Consulta Libros Perdidos' element={<FormLibrosPerdidos/>}/>
+           <Route path='/Registro de usuarios' element={<FormRUsuarios/>}/>        
         </Routes>    
     </BrowserRouter>
       
