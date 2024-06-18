@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 export const HookLibrosperdidos = () => {
+
+  const loginfo = window.localStorage.getItem('Papas')
+
     const [dataform, setdataform] = useState(
         {
         libro_id : "",
@@ -20,11 +23,26 @@ export const HookLibrosperdidos = () => {
       const submit = async (event) => {
         event.preventDefault();
         const url = "http://localhost:3000/Libros_Perdidos";
+        try {
+          const result = await axios.post(url, dataform, {
+            headers:{
+                    'Authorization': `Bear ${loginfo} `
+          }
+        });
+          const dataresult = result.data;
+          setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado[0].id);
+        } catch (error) {
+          if (axios.isAxiosError(error)) {
+              const { response } = error;
+              const { data } = response;
+              console.log(data);
+          } else {
+              console.log("Error Desconocido");
+          }
+      }
+        
     
-        const result = await axios.post(url, dataform);
-        const dataresult = result.data;
-    
-        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado[0].id);
+       
       }
 
       return { dataform, resultado, registro, submit }; 
