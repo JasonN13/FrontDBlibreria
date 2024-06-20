@@ -1,0 +1,88 @@
+#registro-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#registro-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#registro-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#nombre-usuario, #contrasena {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#nombre-usuario:focus, #contrasena:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+#iniciar-sesion-btn, #registro-btn {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#iniciar-sesion-btn {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 27%;
+    width: 50%;
+}
+
+#iniciar-sesion-btn:hover {
+    background-color: #0056b3;
+}
+
+#registro-btn {
+    background-color: #6c757d;
+    color: white;
+    margin-left: 27%;
+    width: 50%;
+}
+
+#registro-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #registro-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #titulo {
+        font-size: 1.5rem;
+    }
+
+    #iniciar-sesion-btn, #registro-btn {
+        font-size: 1rem;
+    }
+}
