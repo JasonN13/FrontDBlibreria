@@ -65,8 +65,6 @@ export const App = () => {
         <Routes>
           {islog ? (
             <>
-              <Route path="/" element={<Inisio />} />
-              <Route path="/Crear_Usuario" element={<FormNUsuario/>} />
               <Route path="/Registro_Libros_perdidos" element={<FormLibros_perdidos />} />
               <Route path="/RegistroLibros" element={<FormLibros />} />
               <Route path="/RegistroPrestamos" element={<FormPrestamos />} />
@@ -79,6 +77,7 @@ export const App = () => {
           ) : (
             <Route path="/" element={<Inisio />} />
           )}
+          <Route path="/Nuevo_usuario" element={<FormNUsuario/>} />
         </Routes>
       </BrowserRouter>
     </>

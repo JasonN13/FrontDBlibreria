@@ -34,7 +34,8 @@ export const HookLibros = () => {
     });
         const dataresult = result.data;
     
-        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_insertado[0].id);
+        setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_insertado[0].libro_id);
+        
     } catch (error) {
       if (axios.isAxiosError(error)) {
           const { response } = error;

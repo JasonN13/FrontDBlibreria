@@ -20,7 +20,7 @@ export const InisioSesionfrmHook = () => {
     }
 
     const Registrar =()=>{
-        location.href ='/Crear_Usuario'
+        location.href = '/Nuevo_usuario'
       }
 
     return {

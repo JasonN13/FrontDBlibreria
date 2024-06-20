@@ -28,10 +28,7 @@ export const FormNUsuario = () => {
                     <label htmlFor="contrasena" className="form-label">Contraseña</label>
                     <input type="password" className="form-control" name='contrasena' onChange={changeHandler} />
                 </div>
-                <div className="mt-3">
-                    <label htmlFor="foto_perfil" className="form-label">Foto de perfil</label>
-                    <input type="file" className="form-control" name='foto_perfil' onChange={changeHandler} />
-                </div>
+                
                 <div className='mt-3' id='btn'>
                     <button type="submit" className="btn btn-primary w-100">Registrar</button>
                 </div>

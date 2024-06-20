@@ -31,7 +31,8 @@ export const HookPrestamos = () => {
         });
       const dataresult = result.data;
   
-      setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado.prestamo_id);
+      setresultado(dataresult.mensaje + ' id: ' + dataresult.Obj_indertado[0].prestamo_id);
+      
     } catch (error) { 
       if (axios.isAxiosError(error)) {
           const { response } = error;
