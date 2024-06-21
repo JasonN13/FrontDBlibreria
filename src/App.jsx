@@ -65,6 +65,7 @@ export const App = () => {
         <Routes>
           {islog ? (
             <>
+              <Route path="/" element={<FormRLibros />} />
               <Route path="/Registro_Libros_perdidos" element={<FormLibros_perdidos />} />
               <Route path="/RegistroLibros" element={<FormLibros />} />
               <Route path="/RegistroPrestamos" element={<FormPrestamos />} />

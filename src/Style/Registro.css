@@ -1,0 +1,67 @@
+/* Estilos para el contenedor principal */
+#form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+#form-title {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos generales para los inputs del formulario */
+input#nombre_usuario,
+input#nombre,
+input#apellido,
+input#email,
+input#contrasena {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para las etiquetas */
+label[for="nombre_usuario"],
+label[for="nombre"],
+label[for="apellido"],
+label[for="email"],
+label[for="contrasena"] {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+/* Estilos para las secciones de los campos */
+.mt-3 {
+    margin-top: 15px;
+}
+
+/* Estilos para el botón */
+button#submit-btn {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+button#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección del botón */
+#btn {
+    text-align: center;
+    margin-top: 20px;
+}
